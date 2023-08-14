@@ -1,0 +1,89 @@
+// homework_1
+#include <stdio.h>
+int main()
+{
+   int array[50], position, c, n;
+   
+   printf("Enter number of elements in array\n");
+   scanf("%d", &n);
+   
+   printf("Enter %d elements\n", n);
+   for (c = 0; c < n; c++)
+   scanf("%d", &array[c]);
+   
+   printf("The array elements are : \n");
+   for (c = 0; c < n; c++)
+   printf("%d\t", array[c]);   
+}
+
+// homework_2
+#include <stdio.h>
+int main()
+{
+   int array[50], pos, c, n;
+   printf("Enter number of elements in array\n");
+   scanf("%d", &n);
+   
+   printf("Enter %d elements\t", n);
+   for (c = 0; c < n; c++)
+      scanf("%d", &array[c]);
+      
+   printf("Enter the location where you wish to delete element\n");
+   scanf("%d", &pos);
+   
+   if (pos >= n+1)
+      printf("Deletion not possible.\n");
+   else
+   {
+      for (c = pos - 1; c < n - 1; c++)
+         array[c] = array[c+1];
+
+      printf("Resultant array:\n");
+
+      for (c = 0; c < n - 1; c++)
+         printf("%d\t", array[c]);
+   }
+}
+
+// homework_3
+#include <stdio.h>
+int main()
+{
+	int A=10,B=15;
+	if(A>B)
+	{
+		printf("\nA is Max and B is Min");
+	}
+	else
+		printf("\nB is Max and A is Min");
+}
+
+// homework_4
+#include <stdio.h>
+int main()
+{
+	int N,i,A=1;
+	printf("enter number=>");
+	scanf("%d",&N);
+	for(i=2;i<10;i++)
+	if(A!=0)
+		{
+		if(i!=9)
+		{
+			if(i!=N)
+				{
+					A=N%i;
+					if(A==0)
+						{
+							printf("number is not mone");
+						}		
+				}
+			else
+				i=i+1;
+		}
+		else
+				printf("number is mone");
+		
+	}
+}
+
